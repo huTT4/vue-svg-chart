@@ -2,10 +2,10 @@
   <nav>
     <ul>
       <li>
-        <router-link to="/svg">SVG-TASK</router-link>
+        <router-link to="/svg">SVG</router-link>
       </li>
       <li>
-        <router-link to="/chart">CHART-TASK</router-link>
+        <router-link to="/chart">CHART</router-link>
       </li>
     </ul>
   </nav>
@@ -40,7 +40,9 @@ li a::before {
   width: 0;
   height: 3px;
   background-color: #000;
-  transition: width 0.3s ease, background-color 0.3s ease;
+  transition:
+    width 0.3s ease,
+    background-color 0.3s ease;
   border-radius: 100px;
 }
 

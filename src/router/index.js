@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
-import SvgTask from '@/views/SvgTask.vue'
-import ChartTask from '@/views/ChartTask.vue'
+import SvgView from '@/views/SvgView.vue'
+import ChartView from '@/views/ChartView.vue'
 
 const routes = [
-  { path: '/svg', component: SvgTask },
-  { path: '/chart', component: ChartTask }
+  { path: '/svg', component: SvgView },
+  { path: '/chart', component: ChartView }
 ]
 
 const router = createRouter({
@@ -13,6 +13,11 @@ const router = createRouter({
   routes,
   linkActiveClass: 'active',
   linkExactActiveClass: 'active'
+})
+
+router.beforeEach((to, _, next) => {
+  if (to.path === '/') next('/chart')
+  else next()
 })
 
 export default router
