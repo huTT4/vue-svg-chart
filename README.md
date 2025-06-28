@@ -6,6 +6,8 @@
 [![Vuetify](https://img.shields.io/badge/Vuetify-555555?logo=vuetify)](https://vuetifyjs.com/)
 [![Vite](https://img.shields.io/badge/Vite-555555?logo=vite)](https://vitejs.dev/)
 
+### https://hutt4.github.io/vue-svg-chart
+
 Проект, демонстрирует два типа визуализации:
 
 1. **SVG - progress bar/dashboard** - отрисовка элементов с помощью чистого SVG
